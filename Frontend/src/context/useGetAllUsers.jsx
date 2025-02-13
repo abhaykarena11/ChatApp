@@ -14,7 +14,7 @@ export default function useGetAllUsers (){
                 const token = Cookies.get("token");
 
                 if(token){
-                    const response = await axios.get("https://chat-app-y61w.vercel.app/user/getAllUsers",{
+                    const response = await axios.get("https://chat-app-temp.vercel.app/user/getAllUsers",{
                         withCredentials: true,
                         headers: {
                             Authorization: `Bearer ${token}`, // Replace YOUR_ACCESS_TOKEN with the actual token
