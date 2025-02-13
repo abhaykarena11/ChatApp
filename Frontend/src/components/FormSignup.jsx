@@ -12,7 +12,7 @@ const FormSignup = () => {
 
     console.log(" i  am here !");
     try {
-      const response = await fetch('http://localhost:5000/user/signup', {
+      const response = await fetch('https://chat-app-temp.vercel.app/user/signup', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
