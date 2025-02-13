@@ -10,7 +10,7 @@ export default  function SendMessage() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/message/send/${selectedConversation._id}`, {
+      const response = await fetch(`https://chat-app-y61w.vercel.app/message/send/${selectedConversation._id}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

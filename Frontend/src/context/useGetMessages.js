@@ -13,7 +13,7 @@ export default function useGetMessages() {
                 setLoading(true);
     
                 try {
-                    const response = await axios.get(`http://localhost:5000/message/get/${selectedConversation._id}`, {
+                    const response = await axios.get(`https://chat-app-y61w.vercel.app/message/get/${selectedConversation._id}`, {
                         withCredentials: true, // Ensures cookies are sent
                     });                   
                     setMessages(response.data.messages);

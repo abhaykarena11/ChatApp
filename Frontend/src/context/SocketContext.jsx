@@ -15,7 +15,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const newSocket = io("http://localhost:5000", {
+      const newSocket = io("https://chat-app-y61w.vercel.app", {
         query: {
           userId: authUser.userId,
         },
